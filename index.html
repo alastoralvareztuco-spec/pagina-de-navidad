@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navidad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Navidad</h1>
+    <nav>
+      <button class="boton-pestana activa" data-pestana="bienvenida">Bienvenida</button>
+      <button class="boton-pestana" data-pestana="historia">Historia</button>
+      <button class="boton-pestana" data-pestana="personajes">Personajes</button>
+      <button class="boton-pestana" data-pestana="regalos">Regalos</button>
+      <button class="boton-pestana" data-pestana="comida">Comida</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bienvenida" class="pestana activa">
+      <h2>La Navidad
+
+
+        
+      </h2>
+      <p>La Navidad es una época para compartir con la familia y los amigos.</p>
+      <h3>Tradiciones navideñas</h3>
+      <ul>
+        <li>Decorar el árbol de Navidad.</li>
+        <li>Compartir una cena en familia.</li>
+        <li>Dar regalos a las personas que queremos.</li>
+      </ul>
+      <h3>Elementos de Navidad</h3>
+      <table>
+        <tr>
+          <th>Imagen</th>
+          <th>Nombre</th>
+          <th>Significado</th>
+        </tr>
+        <tr>
+          <td><img src="arbol%20de%20navidad.jpg" alt="Árbol de Navidad"></td>
+          <td>Árbol</td>
+          <td>Arbol pa santa</td>
+        </tr>
+        <tr>
+          <td><img src="regalo%20de%20navidad.webp" alt="Regalo"></td>
+          <td>Regalo</td>
+          <td>Afecto y cariño</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="historia" class="pestana">
+      <div id="maqueta" class="historia-caja">
+        <h2>Historia de la Navidad</h2>
+        <p>La Navidad, como la conocemos hoy, tiene sus raíces en una mezcla de tradiciones antiguas y festividades paganas. Originalmente, los romanos celebraban la festividad del "Sol Invictus" el 25 de diciembre, en honor al solsticio de invierno y al renacimiento del sol. Con el advenimiento del cristianismo, esta fecha fue adoptada para celebrar el nacimiento de Jesús, combinando elementos de la festividad pagana con los principios cristianos. La elección del 25 de diciembre como fecha para celebrar la Navidad no fue arbitraria, ya que coincidía con la festividad del Sol Invictus, que celebraba el renacer del sol. Esta estrategia de integración cultural permitió que la Navidad se estableciera como una festividad central en el calendario cristiano..</p>
+      </div>
+    </section>
+
+    <section id="personajes" class="pestana">
+      <h2>Personajes navideños</h2>
+      <p>Presiona un botón para conocer cada personaje.</p>
+      <div class="personajes">
+        <div class="tarjeta-personaje">
+          <img src="santa.webp" alt="Papá Noel">
+          <button class="boton-personaje" data-descripcion="Santa reparte regalos a los niños y se come todas mis galletas :v">Papá Noel</button>
+        </div>
+        <div class="tarjeta-personaje">
+          <img src="reno.png" alt="Reno">
+          <button class="boton-personaje" data-descripcion="Los renos ayudan a santa a traer carbon.">Reno</button>
+        </div>
+        <div class="tarjeta-personaje">
+          <img src="mu%C3%B1eco%20de%20nieve.webp" alt="Muñeco de nieve">
+          <button class="boton-personaje" data-descripcion="El muñeco de nieve se construye con nieve :0 .">Muñeco de nieve</button>
+        </div>
+      </div>
+      <p id="descripcion-personaje"></p>
+    </section>
+
+    <section id="regalos" class="pestana">
+      <h2>Lista de regalos</h2>
+      <p>Escribe un regalo.</p>
+      <p>Esto no te dara un regalo de verdad pero la licen nos pidio algo de java asi que tenia que hacerlo igual.</p>
+      <input id="entrada-regalo" type="text" placeholder="Escribe un regalo">
+      <button id="agregar-regalo">Agregar</button>
+      <ul id="lista-regalos"></ul>
+    </section>
+
+    <section id="comida" class="pestana">
+      <h2>Carrito de comida navideña</h2>
+      <p>Presiona el botón para agregar un plato al carrito.</p>
+      <p>Esta tal como esta nuestra economia.</p>
+      <div class="platos">
+        <div class="plato">
+          <h3>Pollo</h3>
+          <p>60bs</p>
+          <button class="agregar-comida" data-nombre="Pavo" data-precio="20">Agregar al carrito</button>
+        </div>
+        <div class="plato">
+          <h3>Paneton</h3>
+          <p>50bs</p>
+          <button class="agregar-comida" data-nombre="Panettone" data-precio="8">Agregar al carrito</button>
+        </div>
+        <div class="plato">
+          <h3>PLATO PACEÑO</h3>
+          <p>1,00000bs</p>
+          <button class="agregar-comida" data-nombre="Turrón" data-precio="5">Agregar al carrito</button>
+        </div>
+      </div>
+      <h3>Tu carrito</h3>
+      <ul id="carrito"></ul>
+      <p id="total">Total: bs0</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Diseñado por: Alex Andree</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

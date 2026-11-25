@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  background-color: #14532d;
+  color: #253321;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 18px;
+  background-color: #b91c1c;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-size: 42px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button {
+  padding: 9px 14px;
+  border: 2px solid #14532d;
+  border-radius: 5px;
+  background-color: #facc15;
+  color: #253321;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover,
+.boton-pestana.activa {
+  background-color: #ffffff;
+}
+
+main {
+  width: 85%;
+  min-height: 390px;
+  margin: 22px auto;
+  padding: 20px;
+  border: 4px solid #b91c1c;
+  border-radius: 10px;
+  background-color: #fffdf0;
+}
+
+.pestana {
+  display: none;
+}
+
+.pestana.activa {
+  display: block;
+}
+
+h2 {
+  color: #b91c1c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #14532d;
+}
+
+th {
+  background-color: #dcfce7;
+}
+
+td img {
+  width: 45px;
+  height: 45px;
+}
+
+.historia-caja {
+  padding: 15px;
+  border: 3px dashed #14532d;
+  background-color: #dcfce7;
+  line-height: 1.6;
+}
+
+.personajes,
+.platos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tarjeta-personaje,
+.plato {
+  width: 180px;
+  padding: 12px;
+  border: 2px solid #14532d;
+  border-radius: 8px;
+  background-color: #dcfce7;
+  text-align: center;
+}
+
+.tarjeta-personaje img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 5px auto 12px;
+}
+
+input {
+  padding: 9px;
+  font-size: 16px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+footer {
+  padding: 10px;
+  background-color: #b91c1c;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 88%;
+  }
+
+  .tarjeta-personaje,
+  .plato {
+    width: 100%;
+  }
+}
